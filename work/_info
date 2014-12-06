@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/CompArch/Project
+vfreqDiv
+Z1 !s110 1417894951
+!i10b 1
+!s100 8Ic2z4mXOfRkk4VTE9?`h1
+IROYO^1<cBk0:_h9ACoYOa2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1417894851
+Z4 8squareWave.v
+Z5 FsquareWave.v
+L0 1
+Z6 OP;L;10.3c;59
+r1
+!s85 0
+31
+Z7 !s108 1417894951.479000
+Z8 !s107 squareWave.v|
+Z9 !s90 -reportprogress|300|-work|work|squareWave.v|
+!s101 -O0
+!i113 1
+Z10 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+nfreq@div
+vtestFreqDiv
+R1
+!i10b 1
+!s100 hI5iSH8Aj=Od:ABM9C@9e1
+Il14jObRF7SP]lJmObd]aI3
+R2
+R0
+R3
+R4
+R5
+L0 22
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+ntest@freq@div
