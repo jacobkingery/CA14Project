@@ -1,0 +1,20 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'squareWaveBringup'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off
+-c 100 -o squareWaveBringup_map.ncd squareWaveBringup.ngd squareWaveBringup.pcf 
+Target Device  : xc3s1000
+Target Package : ft256
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Sun Dec  7 23:31:02 2014
+
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs. 
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

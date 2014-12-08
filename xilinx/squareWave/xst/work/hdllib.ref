@@ -1,0 +1,3 @@
+MO squareWave NULL ../../squareWave.v vlg00/square_wave.bin 1418016859
+MO testSquareWave NULL ../../squareWave.v vlg74/test_square_wave.bin 1418012862
+MO squareWaveBringup NULL ../../squareWave.v vlg43/square_wave_bringup.bin 1418016859

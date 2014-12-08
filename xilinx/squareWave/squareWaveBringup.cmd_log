@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-5 squareWaveBringup.ngc squareWaveBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o squareWaveBringup_map.ncd squareWaveBringup.ngd squareWaveBringup.pcf 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.syr" 

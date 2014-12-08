@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/testSquareWave.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/testSquareWave.syr" 
