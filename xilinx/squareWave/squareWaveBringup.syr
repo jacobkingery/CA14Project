@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> 
 Reading design: squareWaveBringup.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -219,7 +219,7 @@ Unit <squareWave_4> synthesized.
 
 Synthesizing Unit <squareWaveBringup>.
     Related source file is "../../squareWave.v".
-WARNING:Xst:647 - Input <sw<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sw<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <squareWaveBringup> synthesized.
 
 
@@ -423,14 +423,14 @@ Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Delay:               7.635ns (Levels of Logic = 3)
-  Source:            sw<3> (PAD)
+  Source:            sw<4> (PAD)
   Destination:       gpioBank1<3> (PAD)
 
-  Data Path: sw<3> to gpioBank1<3>
+  Data Path: sw<4> to gpioBank1<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.715   0.851  sw_3_IBUF (sw_3_IBUF)
+     IBUF:I->O             1   0.715   0.851  sw_4_IBUF (sw_4_IBUF)
      LUT2:I1->O            1   0.479   0.681  gpioBank1_3_and00001 (gpioBank1_3_OBUF)
      OBUF:I->O                 4.909          gpioBank1_3_OBUF (gpioBank1<3>)
     ----------------------------------------
@@ -440,8 +440,8 @@ Delay:               7.635ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.15 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 24.89 secs
  
 --> 
 

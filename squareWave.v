@@ -52,18 +52,18 @@ module squareWaveBringup(clk, sw, gpioBank1);
 
     wire outG;
     squareWave #(392) G4 (clk, outG);
-    assign gpioBank1[0] = outG & sw[0];
+    assign gpioBank1[0] = outG & sw[7];
 
     wire outA;
     squareWave #(440) A4 (clk, outA);
-    assign gpioBank1[1] = outA & sw[1];
+    assign gpioBank1[1] = outA & sw[6];
 
     wire outB;
     squareWave #(494) B4 (clk, outB);
-    assign gpioBank1[2] = outB & sw[2];
+    assign gpioBank1[2] = outB & sw[5];
 
     wire outC;
     squareWave #(523) C4 (clk, outC);
-    assign gpioBank1[3] = outC & sw[3];
+    assign gpioBank1[3] = outC & sw[4];
 
 endmodule

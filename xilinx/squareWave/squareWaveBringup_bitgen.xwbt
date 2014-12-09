@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.ncd
+OUTFILE=/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/squareWaveBringup.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave
+LICENSE=WebPack
+USER_INFO=210942480_0_0_979
