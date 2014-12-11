@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/jkingery/CompArch/Project/xilinx/noiseWave/impact.xsl
+OUTFILE=/home/jkingery/CompArch/Project/xilinx/noiseWave/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/jkingery/CompArch/Project/xilinx/noiseWave
+LICENSE=iMPACT
+USER_INFO=iMPACT

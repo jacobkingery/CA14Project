@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-12-08T22:16:47</DateModified>
+  <DateModified>2014-12-10T12:32:12</DateModified>
   <ModuleName>squareWaveBringup</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/iseconfig/squareWaveBringup.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/squareWave/</ImplementationReportsDirectory>
   <DateInitialized>2014-12-08T22:16:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

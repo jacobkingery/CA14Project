@@ -110,11 +110,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418095407" xil_pn:in_ck="-4292016167246568674" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-7411303846763531502" xil_pn:start_ts="1418095369">
+    <transform xil_pn:end_ts="1418234987" xil_pn:in_ck="-4292016167246568674" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-7411303846763531502" xil_pn:start_ts="1418234949">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="squareWaveBringup.lso"/>
@@ -132,18 +134,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418095778" xil_pn:in_ck="75588798266479233" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-447257097588092016" xil_pn:start_ts="1418095754">
+    <transform xil_pn:end_ts="1418235012" xil_pn:in_ck="75588798266479233" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-447257097588092016" xil_pn:start_ts="1418234987">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="squareWaveBringup.bld"/>
       <outfile xil_pn:name="squareWaveBringup.ngd"/>
       <outfile xil_pn:name="squareWaveBringup_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418095801" xil_pn:in_ck="75588798266479234" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1418095778">
+    <transform xil_pn:end_ts="1418235034" xil_pn:in_ck="75588798266479234" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1418235012">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -156,10 +160,11 @@
       <outfile xil_pn:name="squareWaveBringup_summary.xml"/>
       <outfile xil_pn:name="squareWaveBringup_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418095884" xil_pn:in_ck="-8832967160307756389" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1418095801">
+    <transform xil_pn:end_ts="1418235114" xil_pn:in_ck="-8832967160307756389" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1418235034">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="squareWaveBringup.ncd"/>
       <outfile xil_pn:name="squareWaveBringup.pad"/>
@@ -171,9 +176,12 @@
       <outfile xil_pn:name="squareWaveBringup_pad.txt"/>
       <outfile xil_pn:name="squareWaveBringup_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418095934" xil_pn:in_ck="-5507269828059094978" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1418095906">
+    <transform xil_pn:end_ts="1418235188" xil_pn:in_ck="-5507269828059094978" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1418235161">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="squareWaveBringup.bgn"/>
       <outfile xil_pn:name="squareWaveBringup.bit"/>
@@ -183,13 +191,15 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418096333" xil_pn:in_ck="-5507269828059107832" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1418096331">
+    <transform xil_pn:end_ts="1418235396" xil_pn:in_ck="-5507269828059107832" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1418235188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1418095884" xil_pn:in_ck="75588798266479102" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1418095873">
+    <transform xil_pn:end_ts="1418235114" xil_pn:in_ck="75588798266479102" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1418235103">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="squareWaveBringup.twr"/>
       <outfile xil_pn:name="squareWaveBringup.twx"/>

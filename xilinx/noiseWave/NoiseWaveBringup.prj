@@ -1,0 +1,2 @@
+verilog work "../../squareWave.v"
+verilog work "../../noiseWave.v"

@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Dec  8 22:31:58 2014
+Wed Dec 10 13:12:51 2014
 
 drc -z squareWaveBringup.ncd squareWaveBringup.pcf
 

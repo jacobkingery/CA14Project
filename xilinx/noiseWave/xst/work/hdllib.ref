@@ -1,0 +1,4 @@
+MO squareWave NULL ../../squareWave.v vlg00/square_wave.bin 1418244279
+MO NoiseWaveBringup NULL ../../noiseWave.v vlg4C/_noise_wave_bringup.bin 1418244279
+MO squareWaveBringup NULL ../../squareWave.v vlg43/square_wave_bringup.bin 1418244279
+MO lfsr NULL ../../noiseWave.v vlg63/lfsr.bin 1418244279

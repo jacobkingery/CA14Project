@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 NoiseWaveBringup.ngc NoiseWaveBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o NoiseWaveBringup_map.ncd NoiseWaveBringup.ngd NoiseWaveBringup.pcf 
+par -w -intstyle ise -ol high -t 1 NoiseWaveBringup_map.ncd NoiseWaveBringup.ncd NoiseWaveBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml NoiseWaveBringup.twx NoiseWaveBringup.ncd -o NoiseWaveBringup.twr NoiseWaveBringup.pcf 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 NoiseWaveBringup.ngc NoiseWaveBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o NoiseWaveBringup_map.ncd NoiseWaveBringup.ngd NoiseWaveBringup.pcf 
+par -w -intstyle ise -ol high -t 1 NoiseWaveBringup_map.ncd NoiseWaveBringup.ncd NoiseWaveBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml NoiseWaveBringup.twx NoiseWaveBringup.ncd -o NoiseWaveBringup.twr NoiseWaveBringup.pcf 
+bitgen -intstyle ise -f NoiseWaveBringup.ut NoiseWaveBringup.ncd 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseWave/NoiseWaveBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 NoiseWaveBringup.ngc NoiseWaveBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o NoiseWaveBringup_map.ncd NoiseWaveBringup.ngd NoiseWaveBringup.pcf 
+par -w -intstyle ise -ol high -t 1 NoiseWaveBringup_map.ncd NoiseWaveBringup.ncd NoiseWaveBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml NoiseWaveBringup.twx NoiseWaveBringup.ncd -o NoiseWaveBringup.twr NoiseWaveBringup.pcf 
+bitgen -intstyle ise -f NoiseWaveBringup.ut NoiseWaveBringup.ncd 
