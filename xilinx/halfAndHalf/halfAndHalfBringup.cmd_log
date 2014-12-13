@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/halfAndHalf/halfAndHalfBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/halfAndHalf/halfAndHalfBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/halfAndHalf/halfAndHalfBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/halfAndHalf/halfAndHalfBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/halfAndHalf/halfAndHalfBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/halfAndHalf/halfAndHalfBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 halfAndHalfBringup.ngc halfAndHalfBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o halfAndHalfBringup_map.ncd halfAndHalfBringup.ngd halfAndHalfBringup.pcf 
+par -w -intstyle ise -ol high -t 1 halfAndHalfBringup_map.ncd halfAndHalfBringup.ncd halfAndHalfBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml halfAndHalfBringup.twx halfAndHalfBringup.ncd -o halfAndHalfBringup.twr halfAndHalfBringup.pcf 
+bitgen -intstyle ise -f halfAndHalfBringup.ut halfAndHalfBringup.ncd 

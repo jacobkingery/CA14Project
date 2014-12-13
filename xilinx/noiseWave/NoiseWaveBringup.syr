@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: NoiseWaveBringup.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -109,8 +109,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling verilog file "../../squareWave.v" in library work
 Module <squareWave> compiled
-Compiling verilog file "../../noiseWave.v" in library work
+Compiling verilog file "../../edgeDetector.v" in library work
 Module <squareWaveBringup> compiled
+Module <edgeDetector> compiled
+Compiling verilog file "../../noiseWave.v" in library work
+Module <testEdgeDetector> compiled
 Module <lfsr> compiled
 Module <NoiseWaveBringup> compiled
 No errors in compilation
@@ -125,24 +128,26 @@ Analyzing hierarchy for module <NoiseWaveBringup> in library <work>.
 Analyzing hierarchy for module <lfsr> in library <work>.
 
 Analyzing hierarchy for module <squareWave> in library <work> with parameters.
-	clkDivider = "00000000000000001111100100011111"
+	clkDivider = "00000000000000000001111100100011"
 	clkFreq = "00000010111110101111000010000000"
-	desiredFreq = "00000000000000000000000110001000"
+	desiredFreq = "00000000000000000000110001000000"
+
+Analyzing hierarchy for module <edgeDetector> in library <work>.
 
 Analyzing hierarchy for module <squareWave> in library <work> with parameters.
-	clkDivider = "00000000000000001101110111110010"
+	clkDivider = "00000000000000000001101110111110"
 	clkFreq = "00000010111110101111000010000000"
-	desiredFreq = "00000000000000000000000110111000"
+	desiredFreq = "00000000000000000000110111000000"
 
 Analyzing hierarchy for module <squareWave> in library <work> with parameters.
-	clkDivider = "00000000000000001100010110101111"
+	clkDivider = "00000000000000000001100010110101"
 	clkFreq = "00000010111110101111000010000000"
-	desiredFreq = "00000000000000000000000111101110"
+	desiredFreq = "00000000000000000000111101110000"
 
 Analyzing hierarchy for module <squareWave> in library <work> with parameters.
-	clkDivider = "00000000000000001011101010111001"
+	clkDivider = "00000000000000000001011101010111"
 	clkFreq = "00000010111110101111000010000000"
-	desiredFreq = "00000000000000000000001000001011"
+	desiredFreq = "00000000000000000001000001011000"
 
 
 =========================================================================
@@ -155,27 +160,30 @@ Analyzing module <lfsr> in library <work>.
 Module <lfsr> is correct for synthesis.
  
 Analyzing module <squareWave.1> in library <work>.
-	clkDivider = 32'sb00000000000000001111100100011111
+	clkDivider = 32'sb00000000000000000001111100100011
 	clkFreq = 32'sb00000010111110101111000010000000
-	desiredFreq = 32'sb00000000000000000000000110001000
+	desiredFreq = 32'sb00000000000000000000110001000000
 Module <squareWave.1> is correct for synthesis.
  
+Analyzing module <edgeDetector> in library <work>.
+Module <edgeDetector> is correct for synthesis.
+ 
 Analyzing module <squareWave.2> in library <work>.
-	clkDivider = 32'sb00000000000000001101110111110010
+	clkDivider = 32'sb00000000000000000001101110111110
 	clkFreq = 32'sb00000010111110101111000010000000
-	desiredFreq = 32'sb00000000000000000000000110111000
+	desiredFreq = 32'sb00000000000000000000110111000000
 Module <squareWave.2> is correct for synthesis.
  
 Analyzing module <squareWave.3> in library <work>.
-	clkDivider = 32'sb00000000000000001100010110101111
+	clkDivider = 32'sb00000000000000000001100010110101
 	clkFreq = 32'sb00000010111110101111000010000000
-	desiredFreq = 32'sb00000000000000000000000111101110
+	desiredFreq = 32'sb00000000000000000000111101110000
 Module <squareWave.3> is correct for synthesis.
  
 Analyzing module <squareWave.4> in library <work>.
-	clkDivider = 32'sb00000000000000001011101010111001
+	clkDivider = 32'sb00000000000000000001011101010111
 	clkFreq = 32'sb00000010111110101111000010000000
-	desiredFreq = 32'sb00000000000000000000001000001011
+	desiredFreq = 32'sb00000000000000000001000001011000
 Module <squareWave.4> is correct for synthesis.
  
 
@@ -188,7 +196,7 @@ Performing bidirectional port resolution...
 Synthesizing Unit <lfsr>.
     Related source file is "../../noiseWave.v".
     Found 8-bit register for signal <q>.
-    Found 1-bit xor4 for signal <q$xor0000> created at line 10.
+    Found 1-bit xor4 for signal <q$xor0000> created at line 11.
     Summary:
 	inferred   1 Xor(s).
 Unit <lfsr> synthesized.
@@ -202,6 +210,17 @@ Synthesizing Unit <squareWave_1>.
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
 Unit <squareWave_1> synthesized.
+
+
+Synthesizing Unit <edgeDetector>.
+    Related source file is "../../edgeDetector.v".
+    Found 1-bit register for signal <neg>.
+    Found 1-bit register for signal <pos>.
+    Found 1-bit register for signal <buffer>.
+    Found 1-bit xor2 for signal <pos$xor0000> created at line 8.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <edgeDetector> synthesized.
 
 
 Synthesizing Unit <squareWave_2>.
@@ -238,12 +257,15 @@ Synthesizing Unit <NoiseWaveBringup>.
     Related source file is "../../noiseWave.v".
 WARNING:Xst:647 - Input <sw<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <q<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <en> is used but never assigned. This sourceless signal will be automatically connected to value 1.
-    Found 1-bit xor2 for signal <gpioBank1_0$xor0000> created at line 57.
-    Found 1-bit xor2 for signal <gpioBank1_1$xor0000> created at line 61.
-    Found 1-bit xor2 for signal <gpioBank1_2$xor0000> created at line 65.
-    Found 1-bit xor2 for signal <gpioBank1_3$xor0000> created at line 69.
+WARNING:Xst:646 - Signal <qG<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <qC<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <qB<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <qA<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <negG> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <negC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <negB> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <negA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <NoiseWaveBringup> synthesized.
 
 
@@ -253,12 +275,12 @@ HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 4
  32-bit up counter                                     : 4
-# Registers                                            : 5
- 1-bit register                                        : 4
- 8-bit register                                        : 1
-# Xors                                                 : 5
+# Registers                                            : 20
+ 1-bit register                                        : 16
+ 8-bit register                                        : 4
+# Xors                                                 : 8
  1-bit xor2                                            : 4
- 1-bit xor4                                            : 1
+ 1-bit xor4                                            : 4
 
 =========================================================================
 
@@ -273,17 +295,21 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 4
  32-bit up counter                                     : 4
-# Registers                                            : 12
- Flip-Flops                                            : 12
-# Xors                                                 : 5
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+# Xors                                                 : 8
  1-bit xor2                                            : 4
- 1-bit xor4                                            : 1
+ 1-bit xor4                                            : 4
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <ED_C/neg> of sequential type is unconnected in block <NoiseWaveBringup>.
+WARNING:Xst:2677 - Node <ED_B/neg> of sequential type is unconnected in block <NoiseWaveBringup>.
+WARNING:Xst:2677 - Node <ED_A/neg> of sequential type is unconnected in block <NoiseWaveBringup>.
+WARNING:Xst:2677 - Node <ED_G/neg> of sequential type is unconnected in block <NoiseWaveBringup>.
 
 Optimizing unit <NoiseWaveBringup> ...
 
@@ -297,8 +323,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 140
- Flip-Flops                                            : 140
+# Registers                                            : 172
+ Flip-Flops                                            : 172
 
 =========================================================================
 
@@ -327,20 +353,21 @@ Design Statistics
 # IOs                              : 13
 
 Cell Usage :
-# BELS                             : 455
+# BELS                             : 462
 #      GND                         : 1
 #      INV                         : 8
 #      LUT1                        : 124
-#      LUT3                        : 4
-#      LUT4                        : 33
+#      LUT2                        : 8
+#      LUT4                        : 36
 #      MUXCY                       : 156
 #      VCC                         : 1
 #      XORCY                       : 128
-# FlipFlops/Latches                : 140
-#      FDCE                        : 7
+# FlipFlops/Latches                : 172
+#      FD                          : 4
+#      FDCE                        : 28
 #      FDE                         : 4
-#      FDPE                        : 1
-#      FDR                         : 128
+#      FDPE                        : 4
+#      FDR                         : 132
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 8
@@ -353,9 +380,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                       89  out of   7680     1%  
- Number of Slice Flip Flops:            140  out of  15360     0%  
- Number of 4 input LUTs:                169  out of  15360     1%  
+ Number of Slices:                      108  out of   7680     1%  
+ Number of Slice Flip Flops:            172  out of  15360     1%  
+ Number of 4 input LUTs:                176  out of  15360     1%  
  Number of IOs:                          13
  Number of bonded IOBs:                   9  out of    173     5%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -381,7 +408,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 140   |
+clk                                | BUFGP                  | 172   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -389,7 +416,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-N0(XST_GND:G)                      | NONE(noise/q_0)        | 8     |
+N0(XST_GND:G)                      | NONE(noiseA/q_0)       | 32    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -398,8 +425,8 @@ Speed Grade: -5
 
    Minimum period: 5.631ns (Maximum Frequency: 177.590MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 7.610ns
-   Maximum combinational path delay: 7.760ns
+   Maximum output required time after clock: 7.735ns
+   Maximum combinational path delay: 7.635ns
 
 Timing Detail:
 --------------
@@ -408,19 +435,19 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 5.631ns (frequency: 177.590MHz)
-  Total number of paths / destination ports: 6351 / 272
+  Total number of paths / destination ports: 6428 / 336
 -------------------------------------------------------------------------
 Delay:               5.631ns (Levels of Logic = 9)
-  Source:            B4/counter_7 (FF)
+  Source:            B4/counter_8 (FF)
   Destination:       B4/counter_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: B4/counter_7 to B4/counter_0
+  Data Path: B4/counter_8 to B4/counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.626   1.040  B4/counter_7 (B4/counter_7)
+     FDR:C->Q              2   0.626   1.040  B4/counter_8 (B4/counter_8)
      LUT4:I0->O            1   0.479   0.000  B4/counter_cmp_eq0000_wg_lut<0> (B4/counter_cmp_eq0000_wg_lut<0>)
      MUXCY:S->O            1   0.435   0.000  B4/counter_cmp_eq0000_wg_cy<0> (B4/counter_cmp_eq0000_wg_cy<0>)
      MUXCY:CI->O           1   0.056   0.000  B4/counter_cmp_eq0000_wg_cy<1> (B4/counter_cmp_eq0000_wg_cy<1>)
@@ -437,29 +464,29 @@ Delay:               5.631ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 8 / 4
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              7.610ns (Levels of Logic = 2)
-  Source:            C4/out (FF)
+Offset:              7.735ns (Levels of Logic = 2)
+  Source:            noiseC/q_0 (FF)
   Destination:       gpioBank1<3> (PAD)
   Source Clock:      clk rising
 
-  Data Path: C4/out to gpioBank1<3>
+  Data Path: noiseC/q_0 to gpioBank1<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.626   0.915  C4/out (C4/out)
-     LUT3:I1->O            1   0.479   0.681  gpioBank1_3_and00001 (gpioBank1_3_OBUF)
+     FDPE:C->Q             2   0.626   1.040  noiseC/q_0 (noiseC/q_0)
+     LUT2:I0->O            1   0.479   0.681  gpioBank1_3_and00001 (gpioBank1_3_OBUF)
      OBUF:I->O                 4.909          gpioBank1_3_OBUF (gpioBank1<3>)
     ----------------------------------------
-    Total                      7.610ns (6.014ns logic, 1.596ns route)
-                                       (79.0% logic, 21.0% route)
+    Total                      7.735ns (6.014ns logic, 1.721ns route)
+                                       (77.7% logic, 22.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               7.760ns (Levels of Logic = 3)
+Delay:               7.635ns (Levels of Logic = 3)
   Source:            sw<4> (PAD)
   Destination:       gpioBank1<3> (PAD)
 
@@ -467,25 +494,25 @@ Delay:               7.760ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.715   0.976  sw_4_IBUF (sw_4_IBUF)
-     LUT3:I0->O            1   0.479   0.681  gpioBank1_3_and00001 (gpioBank1_3_OBUF)
+     IBUF:I->O             1   0.715   0.851  sw_4_IBUF (sw_4_IBUF)
+     LUT2:I1->O            1   0.479   0.681  gpioBank1_3_and00001 (gpioBank1_3_OBUF)
      OBUF:I->O                 4.909          gpioBank1_3_OBUF (gpioBank1<3>)
     ----------------------------------------
-    Total                      7.760ns (6.103ns logic, 1.657ns route)
-                                       (78.6% logic, 21.4% route)
+    Total                      7.635ns (6.103ns logic, 1.532ns route)
+                                       (79.9% logic, 20.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 26.00 secs
-Total CPU time to Xst completion: 25.42 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.27 secs
  
 --> 
 
 
-Total memory usage is 517868 kilobytes
+Total memory usage is 518464 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

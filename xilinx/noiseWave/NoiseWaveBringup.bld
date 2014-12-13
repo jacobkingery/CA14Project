@@ -31,10 +31,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 394996 kilobytes
+Total memory usage is 395072 kilobytes
 
 Writing NGD file "NoiseWaveBringup.ngd" ...
-Total REAL time to NGDBUILD completion:  15 sec
-Total CPU time to NGDBUILD completion:   15 sec
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "NoiseWaveBringup.bld"...

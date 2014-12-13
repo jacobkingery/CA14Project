@@ -21,7 +21,7 @@ NET "gpioBank1[1]" LOC = R13;
 NET "gpioBank1[2]" LOC = T13;
 NET "gpioBank1[3]" LOC = R12;
 
-#NET "gpioBank2[0]" LOC = T12;
-#NET "gpioBank2[1]" LOC = R11;
-#NET "gpioBank2[2]" LOC = P8;
-#NET "gpioBank2[3]" LOC = T10;
+NET "gpioBank2[0]" LOC = T12;
+NET "gpioBank2[1]" LOC = R11;
+NET "gpioBank2[2]" LOC = P8;
+NET "gpioBank2[3]" LOC = T10;

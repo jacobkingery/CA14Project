@@ -45,10 +45,10 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-gpioBank1<0>|   11.932(R)|clk_BUFGP         |   0.000|
-gpioBank1<1>|   12.929(R)|clk_BUFGP         |   0.000|
-gpioBank1<2>|   12.607(R)|clk_BUFGP         |   0.000|
-gpioBank1<3>|   13.197(R)|clk_BUFGP         |   0.000|
+gpioBank1<0>|    9.301(R)|clk_BUFGP         |   0.000|
+gpioBank1<1>|   10.216(R)|clk_BUFGP         |   0.000|
+gpioBank1<2>|   10.440(R)|clk_BUFGP         |   0.000|
+gpioBank1<3>|    9.908(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -56,21 +56,21 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.759|         |         |         |
+clk            |    5.956|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-sw<4>          |gpioBank1<3>   |    8.846|
-sw<5>          |gpioBank1<2>   |    7.833|
-sw<6>          |gpioBank1<1>   |    8.531|
-sw<7>          |gpioBank1<0>   |    8.314|
+sw<4>          |gpioBank1<3>   |    8.470|
+sw<5>          |gpioBank1<2>   |    7.408|
+sw<6>          |gpioBank1<1>   |    7.405|
+sw<7>          |gpioBank1<0>   |    7.726|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Dec 10 15:46:46 2014 
+Analysis completed Fri Dec 12 23:53:47 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

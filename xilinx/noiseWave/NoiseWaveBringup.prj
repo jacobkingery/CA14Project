@@ -1,2 +1,3 @@
 verilog work "../../squareWave.v"
+verilog work "../../edgeDetector.v"
 verilog work "../../noiseWave.v"
