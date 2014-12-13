@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-JAK::  Sat Dec 13 00:04:43 2014
+JAK::  Sat Dec 13 10:30:02 2014
 
 par -w -intstyle ise -ol high -t 1 halfAndHalfBringup_map.ncd
 halfAndHalfBringup.ncd halfAndHalfBringup.pcf 
@@ -100,13 +100,13 @@ Updating file: halfAndHalfBringup.ncd with current fully routed design.
 
 Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Total REAL time to Router completion: 13 secs 
+Total REAL time to Router completion: 12 secs 
 Total CPU time to Router completion: 12 secs 
 
 Partition Implementation Status
@@ -162,8 +162,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 13 secs 
-Total CPU time to PAR completion: 13 secs 
+Total REAL time to PAR completion: 12 secs 
+Total CPU time to PAR completion: 12 secs 
 
 Peak Memory Usage:  554 MB
 

@@ -77,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1418446996" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1418446996">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1418446996" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8794219944670099729" xil_pn:start_ts="1418446996">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -102,7 +103,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418447073" xil_pn:in_ck="869382868701842956" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-8058242396954207989" xil_pn:start_ts="1418447066">
+    <transform xil_pn:end_ts="1418484593" xil_pn:in_ck="869382868701842956" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="6435962212702328663" xil_pn:start_ts="1418484586">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -123,20 +124,28 @@
     <transform xil_pn:end_ts="1418446999" xil_pn:in_ck="-8410319915459618368" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6628869848690583138" xil_pn:start_ts="1418446999">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1418447077" xil_pn:in_ck="5235856509479139110" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6571216112727552779" xil_pn:start_ts="1418447073">
+    <transform xil_pn:end_ts="1418484597" xil_pn:in_ck="5235856509479139110" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6571216112727552779" xil_pn:start_ts="1418484593">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="halfAndHalfBringup.bld"/>
       <outfile xil_pn:name="halfAndHalfBringup.ngd"/>
       <outfile xil_pn:name="halfAndHalfBringup_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418447081" xil_pn:in_ck="5235856509479139111" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1418447077">
+    <transform xil_pn:end_ts="1418484600" xil_pn:in_ck="5235856509479139111" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1418484597">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="halfAndHalfBringup.pcf"/>
@@ -148,9 +157,12 @@
       <outfile xil_pn:name="halfAndHalfBringup_summary.xml"/>
       <outfile xil_pn:name="halfAndHalfBringup_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418447099" xil_pn:in_ck="9005160945886282176" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1418447081">
+    <transform xil_pn:end_ts="1418484617" xil_pn:in_ck="9005160945886282176" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1418484600">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="halfAndHalfBringup.ncd"/>
       <outfile xil_pn:name="halfAndHalfBringup.pad"/>
@@ -162,9 +174,10 @@
       <outfile xil_pn:name="halfAndHalfBringup_pad.txt"/>
       <outfile xil_pn:name="halfAndHalfBringup_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418447103" xil_pn:in_ck="5468962577830710499" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="4026351017656627060" xil_pn:start_ts="1418447099">
+    <transform xil_pn:end_ts="1418484622" xil_pn:in_ck="5468962577830710499" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1418484617">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="halfAndHalfBringup.bgn"/>
       <outfile xil_pn:name="halfAndHalfBringup.bit"/>
@@ -174,13 +187,17 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418447122" xil_pn:in_ck="5468962577830697645" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1418447120">
+    <transform xil_pn:end_ts="1418484626" xil_pn:in_ck="5468962577830697645" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1418484622">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1418447099" xil_pn:in_ck="5235856509479138979" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1418447096">
+    <transform xil_pn:end_ts="1418484617" xil_pn:in_ck="5235856509479138979" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1418484615">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="halfAndHalfBringup.twr"/>
       <outfile xil_pn:name="halfAndHalfBringup.twx"/>
