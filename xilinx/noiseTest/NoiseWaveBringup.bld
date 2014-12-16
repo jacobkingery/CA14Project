@@ -1,0 +1,129 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc
+/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5
+NoiseWaveBringup.ngc NoiseWaveBringup.ngd
+
+Reading NGO file
+"/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/NoiseWaveBringup
+.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[0]" LOC = J13;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(14)]: NET "btn[0]"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn[0]" LOC = J13;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(14)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[1]" LOC = K14;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(15)]: NET "btn[1]"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn[1]" LOC = K14;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(15)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[2]" LOC = K13;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(16)]: NET "btn[2]"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn[2]" LOC = K13;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(16)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[3]" LOC = K12;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(17)]: NET "btn[3]"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn[3]" LOC = K12;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(17)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "gpioBank2[0]" LOC = T12;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(24)]: NET
+   "gpioBank2[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "gpioBank2[0]" LOC = T12;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(24)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "gpioBank2[1]" LOC = R11;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(25)]: NET
+   "gpioBank2[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "gpioBank2[1]" LOC = R11;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(25)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "gpioBank2[2]" LOC = P8;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(26)]: NET
+   "gpioBank2[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "gpioBank2[2]" LOC = P8;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(26)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "gpioBank2[3]" LOC = T10;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(27)]: NET
+   "gpioBank2[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "gpioBank2[3]" LOC = T10;>
+   [/home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf(27)]' could not be
+   found and so the Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     8
+  Number of warnings:   8
+
+Total memory usage is 394912 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "NoiseWaveBringup.bld"...

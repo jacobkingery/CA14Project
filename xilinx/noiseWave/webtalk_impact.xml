@@ -3,9 +3,9 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="impact" timeStamp="Sat Dec 13 12:45:56 2014">
+<application name="impact" timeStamp="Sat Dec 13 12:55:42 2014">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="8694750f632c40889fbb19fb1580ebd5"/>
+<property name="ProjectID" value="9fdfcf93df9f4af1afc68deb9a8c4d56"/>
 <property name="ProjectIteration" value="1"/>
 </section>
 <section name="iMPACT Project Info" visible="true">
@@ -15,7 +15,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OS Release" value="Ubuntu 12.04.5 LTS"/>
 <property name="User Lic. Info" value="210942480_0_0_979"/>
 </section>
-<section name="iMPACT One Step SVF File Mode" visible="true">
+<section name="iMPACT Boundary Scan Mode" visible="true">
 <item name="Chain Summary">
 <property name="Number of device" value="2"/>
 <property name="Number of Xilinx device" value="2"/>
@@ -28,16 +28,6 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="Part2" value="xcf04s"/>
 </item>
 <item name="Boundary Scan Operations Statistics">
-<property name="BSCAN Operation" value="Program -p 0
-"/>
-<property name="BSCAN Operation" value="Program -p 0
-"/>
-<property name="BSCAN Operation" value="Program -p 0
-"/>
-<property name="BSCAN Operation" value="Program -p 0
-"/>
-<property name="BSCAN Operation" value="Program -p 0
-"/>
 <property name="BSCAN Operation" value="Program -p 0
 "/>
 </item>

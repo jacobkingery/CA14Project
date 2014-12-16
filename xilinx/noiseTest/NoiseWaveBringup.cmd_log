@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/NoiseWaveBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/NoiseWaveBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 NoiseWaveBringup.ngc NoiseWaveBringup.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 NoiseWaveBringup.ngc NoiseWaveBringup.ngd  

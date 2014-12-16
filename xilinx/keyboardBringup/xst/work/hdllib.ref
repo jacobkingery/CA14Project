@@ -1,0 +1,7 @@
+MO squareWave NULL ../../squareWave.v vlg00/square_wave.bin 1418492838
+MO NoiseWaveBringup NULL ../../noiseWave.v vlg4C/_noise_wave_bringup.bin 1418492838
+MO squareWaveBringup NULL ../../squareWave.v vlg43/square_wave_bringup.bin 1418492838
+MO testEdgeDetector NULL ../../edgeDetector.v vlg13/test_edge_detector.bin 1418492838
+MO keyboardBringup NULL ../../keyboardBringup.v vlg54/keyboard_bringup.bin 1418492838
+MO edgeDetector NULL ../../edgeDetector.v vlg3F/edge_detector.bin 1418492838
+MO lfsr NULL ../../noiseWave.v vlg63/lfsr.bin 1418492838

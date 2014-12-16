@@ -1,0 +1,520 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: noiseTestBringup.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "noiseTestBringup.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "noiseTestBringup"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : noiseTestBringup
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../squareWave.v" in library work
+Module <squareWave> compiled
+Compiling verilog file "../../edgeDetector.v" in library work
+Module <squareWaveBringup> compiled
+Module <edgeDetector> compiled
+Compiling verilog file "../../noiseWave.v" in library work
+Module <testEdgeDetector> compiled
+Module <lfsr> compiled
+Compiling verilog file "../../noiseTestBringup.v" in library work
+Module <NoiseWaveBringup> compiled
+Module <noiseTestBringup> compiled
+No errors in compilation
+Analysis of file <"noiseTestBringup.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <noiseTestBringup> in library <work>.
+
+Analyzing hierarchy for module <lfsr> in library <work>.
+
+Analyzing hierarchy for module <squareWave> in library <work> with parameters.
+	clkDivider = "00000000000000001101110111110010"
+	clkFreq = "00000010111110101111000010000000"
+	desiredFreq = "00000000000000000000000110111000"
+
+Analyzing hierarchy for module <edgeDetector> in library <work>.
+
+Analyzing hierarchy for module <squareWave> in library <work> with parameters.
+	clkDivider = "00000000000000001001010000110000"
+	clkFreq = "00000010111110101111000010000000"
+	desiredFreq = "00000000000000000000001010010011"
+
+Analyzing hierarchy for module <squareWave> in library <work> with parameters.
+	clkDivider = "00000000000000000110111011111001"
+	clkFreq = "00000010111110101111000010000000"
+	desiredFreq = "00000000000000000000001101110000"
+
+Analyzing hierarchy for module <squareWave> in library <work> with parameters.
+	clkDivider = "00000000000000000100101000011000"
+	clkFreq = "00000010111110101111000010000000"
+	desiredFreq = "00000000000000000000010100100110"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <noiseTestBringup>.
+Module <noiseTestBringup> is correct for synthesis.
+ 
+Analyzing module <lfsr> in library <work>.
+Module <lfsr> is correct for synthesis.
+ 
+Analyzing module <squareWave.1> in library <work>.
+	clkDivider = 32'sb00000000000000001101110111110010
+	clkFreq = 32'sb00000010111110101111000010000000
+	desiredFreq = 32'sb00000000000000000000000110111000
+Module <squareWave.1> is correct for synthesis.
+ 
+Analyzing module <edgeDetector> in library <work>.
+Module <edgeDetector> is correct for synthesis.
+ 
+Analyzing module <squareWave.2> in library <work>.
+	clkDivider = 32'sb00000000000000001001010000110000
+	clkFreq = 32'sb00000010111110101111000010000000
+	desiredFreq = 32'sb00000000000000000000001010010011
+Module <squareWave.2> is correct for synthesis.
+ 
+Analyzing module <squareWave.3> in library <work>.
+	clkDivider = 32'sb00000000000000000110111011111001
+	clkFreq = 32'sb00000010111110101111000010000000
+	desiredFreq = 32'sb00000000000000000000001101110000
+Module <squareWave.3> is correct for synthesis.
+ 
+Analyzing module <squareWave.4> in library <work>.
+	clkDivider = 32'sb00000000000000000100101000011000
+	clkFreq = 32'sb00000010111110101111000010000000
+	desiredFreq = 32'sb00000000000000000000010100100110
+Module <squareWave.4> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <lfsr>.
+    Related source file is "../../noiseWave.v".
+    Found 8-bit register for signal <q>.
+    Found 1-bit xor4 for signal <q$xor0000> created at line 11.
+    Summary:
+	inferred   1 Xor(s).
+Unit <lfsr> synthesized.
+
+
+Synthesizing Unit <squareWave_1>.
+    Related source file is "../../squareWave.v".
+    Found 1-bit register for signal <out>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <squareWave_1> synthesized.
+
+
+Synthesizing Unit <edgeDetector>.
+    Related source file is "../../edgeDetector.v".
+    Found 1-bit register for signal <neg>.
+    Found 1-bit register for signal <pos>.
+    Found 1-bit register for signal <buffer>.
+    Found 1-bit xor2 for signal <pos$xor0000> created at line 8.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <edgeDetector> synthesized.
+
+
+Synthesizing Unit <squareWave_2>.
+    Related source file is "../../squareWave.v".
+    Found 1-bit register for signal <out>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <squareWave_2> synthesized.
+
+
+Synthesizing Unit <squareWave_3>.
+    Related source file is "../../squareWave.v".
+    Found 1-bit register for signal <out>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <squareWave_3> synthesized.
+
+
+Synthesizing Unit <squareWave_4>.
+    Related source file is "../../squareWave.v".
+    Found 1-bit register for signal <out>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <squareWave_4> synthesized.
+
+
+Synthesizing Unit <noiseTestBringup>.
+    Related source file is "../../noiseTestBringup.v".
+WARNING:Xst:647 - Input <sw<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <qG<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <qC<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <qB<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <qA<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nnegG> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nnegC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nnegB> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nnegA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <noiseTestBringup> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 20
+ 1-bit register                                        : 16
+ 8-bit register                                        : 4
+# Xors                                                 : 8
+ 1-bit xor2                                            : 4
+ 1-bit xor4                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+# Xors                                                 : 8
+ 1-bit xor2                                            : 4
+ 1-bit xor4                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <ED_C/neg> of sequential type is unconnected in block <noiseTestBringup>.
+WARNING:Xst:2677 - Node <ED_B/neg> of sequential type is unconnected in block <noiseTestBringup>.
+WARNING:Xst:2677 - Node <ED_A/neg> of sequential type is unconnected in block <noiseTestBringup>.
+WARNING:Xst:2677 - Node <ED_G/neg> of sequential type is unconnected in block <noiseTestBringup>.
+
+Optimizing unit <noiseTestBringup> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block noiseTestBringup, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 172
+ Flip-Flops                                            : 172
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : noiseTestBringup.ngr
+Top Level Output File Name         : noiseTestBringup
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 462
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 124
+#      LUT2                        : 8
+#      LUT4                        : 36
+#      MUXCY                       : 156
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 172
+#      FD                          : 4
+#      FDCE                        : 28
+#      FDE                         : 4
+#      FDPE                        : 4
+#      FDR                         : 132
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                      108  out of   7680     1%  
+ Number of Slice Flip Flops:            172  out of  15360     1%  
+ Number of 4 input LUTs:                176  out of  15360     1%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  17  out of    173     9%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 172   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+N0(XST_GND:G)                      | NONE(noiseA/q_0)       | 32    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.631ns (Maximum Frequency: 177.590MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.735ns
+   Maximum combinational path delay: 7.635ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.631ns (frequency: 177.590MHz)
+  Total number of paths / destination ports: 6428 / 336
+-------------------------------------------------------------------------
+Delay:               5.631ns (Levels of Logic = 9)
+  Source:            nB4/counter_9 (FF)
+  Destination:       nB4/counter_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: nB4/counter_9 to nB4/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.626   1.040  nB4/counter_9 (nB4/counter_9)
+     LUT4:I0->O            1   0.479   0.000  nB4/counter_cmp_eq0000_wg_lut<0> (nB4/counter_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  nB4/counter_cmp_eq0000_wg_cy<0> (nB4/counter_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  nB4/counter_cmp_eq0000_wg_cy<1> (nB4/counter_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  nB4/counter_cmp_eq0000_wg_cy<2> (nB4/counter_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  nB4/counter_cmp_eq0000_wg_cy<3> (nB4/counter_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  nB4/counter_cmp_eq0000_wg_cy<4> (nB4/counter_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  nB4/counter_cmp_eq0000_wg_cy<5> (nB4/counter_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  nB4/counter_cmp_eq0000_wg_cy<6> (nB4/counter_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.246   1.580  nB4/counter_cmp_eq0000_wg_cy<7> (nB4/counter_cmp_eq0000)
+     FDR:R                     0.892          nB4/counter_0
+    ----------------------------------------
+    Total                      5.631ns (3.011ns logic, 2.620ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              7.735ns (Levels of Logic = 2)
+  Source:            noiseC/q_0 (FF)
+  Destination:       gpioBank2<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: noiseC/q_0 to gpioBank2<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.626   1.040  noiseC/q_0 (noiseC/q_0)
+     LUT2:I0->O            1   0.479   0.681  gpioBank2_3_and00001 (gpioBank2_3_OBUF)
+     OBUF:I->O                 4.909          gpioBank2_3_OBUF (gpioBank2<3>)
+    ----------------------------------------
+    Total                      7.735ns (6.014ns logic, 1.721ns route)
+                                       (77.7% logic, 22.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               7.635ns (Levels of Logic = 3)
+  Source:            btn<0> (PAD)
+  Destination:       gpioBank2<3> (PAD)
+
+  Data Path: btn<0> to gpioBank2<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.851  btn_0_IBUF (btn_0_IBUF)
+     LUT2:I1->O            1   0.479   0.681  gpioBank2_3_and00001 (gpioBank2_3_OBUF)
+     OBUF:I->O                 4.909          gpioBank2_3_OBUF (gpioBank2<3>)
+    ----------------------------------------
+    Total                      7.635ns (6.103ns logic, 1.532ns route)
+                                       (79.9% logic, 20.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.12 secs
+ 
+--> 
+
+
+Total memory usage is 518416 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

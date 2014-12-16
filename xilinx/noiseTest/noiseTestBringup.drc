@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sat Dec 13 12:30:26 2014
+
+drc -z noiseTestBringup.ncd noiseTestBringup.pcf
+
+DRC detected 0 errors and 0 warnings.

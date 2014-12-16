@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 noiseTestBringup.ngc noiseTestBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o noiseTestBringup_map.ncd noiseTestBringup.ngd noiseTestBringup.pcf 
+par -w -intstyle ise -ol high -t 1 noiseTestBringup_map.ncd noiseTestBringup.ncd noiseTestBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml noiseTestBringup.twx noiseTestBringup.ncd -o noiseTestBringup.twr noiseTestBringup.pcf 
+bitgen -intstyle ise -f noiseTestBringup.ut noiseTestBringup.ncd 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 noiseTestBringup.ngc noiseTestBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o noiseTestBringup_map.ncd noiseTestBringup.ngd noiseTestBringup.pcf 
+par -w -intstyle ise -ol high -t 1 noiseTestBringup_map.ncd noiseTestBringup.ncd noiseTestBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml noiseTestBringup.twx noiseTestBringup.ncd -o noiseTestBringup.twr noiseTestBringup.pcf 
+bitgen -intstyle ise -f noiseTestBringup.ut noiseTestBringup.ncd 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 noiseTestBringup.ngc noiseTestBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o noiseTestBringup_map.ncd noiseTestBringup.ngd noiseTestBringup.pcf 
+par -w -intstyle ise -ol high -t 1 noiseTestBringup_map.ncd noiseTestBringup.ncd noiseTestBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml noiseTestBringup.twx noiseTestBringup.ncd -o noiseTestBringup.twr noiseTestBringup.pcf 
+bitgen -intstyle ise -f noiseTestBringup.ut noiseTestBringup.ncd 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 noiseTestBringup.ngc noiseTestBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o noiseTestBringup_map.ncd noiseTestBringup.ngd noiseTestBringup.pcf 
+par -w -intstyle ise -ol high -t 1 noiseTestBringup_map.ncd noiseTestBringup.ncd noiseTestBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml noiseTestBringup.twx noiseTestBringup.ncd -o noiseTestBringup.twr noiseTestBringup.pcf 
+bitgen -intstyle ise -f noiseTestBringup.ut noiseTestBringup.ncd 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 noiseTestBringup.ngc noiseTestBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o noiseTestBringup_map.ncd noiseTestBringup.ngd noiseTestBringup.pcf 
+par -w -intstyle ise -ol high -t 1 noiseTestBringup_map.ncd noiseTestBringup.ncd noiseTestBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml noiseTestBringup.twx noiseTestBringup.ncd -o noiseTestBringup.twr noiseTestBringup.pcf 
+bitgen -intstyle ise -f noiseTestBringup.ut noiseTestBringup.ncd 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 noiseTestBringup.ngc noiseTestBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o noiseTestBringup_map.ncd noiseTestBringup.ngd noiseTestBringup.pcf 
+par -w -intstyle ise -ol high -t 1 noiseTestBringup_map.ncd noiseTestBringup.ncd noiseTestBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml noiseTestBringup.twx noiseTestBringup.ncd -o noiseTestBringup.twr noiseTestBringup.pcf 
+bitgen -intstyle ise -f noiseTestBringup.ut noiseTestBringup.ncd 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/noiseTest/noiseTestBringup.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/jkingery/.wine/drive_c/CompArch/Project/fpga.ucf -p xc3s1000-ft256-5 noiseTestBringup.ngc noiseTestBringup.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o noiseTestBringup_map.ncd noiseTestBringup.ngd noiseTestBringup.pcf 
+par -w -intstyle ise -ol high -t 1 noiseTestBringup_map.ncd noiseTestBringup.ncd noiseTestBringup.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml noiseTestBringup.twx noiseTestBringup.ncd -o noiseTestBringup.twr noiseTestBringup.pcf 
+bitgen -intstyle ise -f noiseTestBringup.ut noiseTestBringup.ncd 

@@ -1,0 +1,7 @@
+MO squareWave NULL ../../squareWave.v vlg00/square_wave.bin 1418491805
+MO NoiseWaveBringup NULL ../../noiseWave.v vlg4C/_noise_wave_bringup.bin 1418491805
+MO squareWaveBringup NULL ../../squareWave.v vlg43/square_wave_bringup.bin 1418491805
+MO testEdgeDetector NULL ../../edgeDetector.v vlg13/test_edge_detector.bin 1418491805
+MO edgeDetector NULL ../../edgeDetector.v vlg3F/edge_detector.bin 1418491805
+MO lfsr NULL ../../noiseWave.v vlg63/lfsr.bin 1418491805
+MO noiseTestBringup NULL ../../noiseTestBringup.v vlg15/noise_test_bringup.bin 1418491805
