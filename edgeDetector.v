@@ -2,6 +2,9 @@ module edgeDetector(clk, in, pos, neg);
 input clk, in;
 output reg pos, neg;
 
+initial pos = 0;
+initial neg = 0;
+
 reg buffer;
 always @(posedge clk) begin
   buffer <= in;

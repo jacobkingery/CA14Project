@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/CompArch/Project
 vedgeDetector
-Z1 !s110 1418442254
+Z1 !s110 1418716169
 !i10b 1
-!s100 GUNYao3Gb596l<m5NNE>73
-I`<hPjg6MELCSmPM0ThKoM0
+!s100 cSl;4[=Fkfl?ZM0VNQfjM3
+Igcm:`WdAAO6lH=Z>NNY>m1
 Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
-Z3 w1418441710
+Z3 w1418714090
 Z4 8edgeDetector.v
 Z5 FedgeDetector.v
 L0 1
@@ -23,23 +23,45 @@ Z6 OP;L;10.3c;59
 r1
 !s85 0
 31
-Z7 !s108 1418442253.975000
-Z8 !s107 edgeDetector.v|squareWave.v|noiseWave.v|
-Z9 !s90 -reportprogress|300|-work|work|noiseWave.v|squareWave.v|edgeDetector.v|
+Z7 !s108 1418716168.903000
+Z8 !s107 keyboardBringup.v|edgeDetector.v|noiseWave.v|squareWave.v|songMemory.v|playFromFile.v|
+Z9 !s90 -reportprogress|300|-work|work|playFromFile.v|songMemory.v|squareWave.v|noiseWave.v|edgeDetector.v|keyboardBringup.v|
 !s101 -O0
 !i113 1
 Z10 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 nedge@detector
+vkeyboardBringup
+R1
+!i10b 1
+!s100 fMdaGQ?TR4LZK_6Qa[3J90
+IiYZ]W6mkCFnJVTO4`i6H71
+R2
+R0
+w1418492690
+8keyboardBringup.v
+FkeyboardBringup.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+nkeyboard@bringup
 vlfsr
-Z11 !s110 1418442253
+R1
 !i10b 1
 !s100 YK=W^1`nbA07zbPi^4=hn1
 I[b;@;AkiB6dWeE1OJ:YdY2
 R2
 R0
-Z12 w1418442249
-Z13 8noiseWave.v
-Z14 FnoiseWave.v
+Z11 w1418446391
+Z12 8noiseWave.v
+Z13 FnoiseWave.v
 L0 2
 R6
 r1
@@ -51,16 +73,82 @@ R9
 !s101 -O0
 !i113 1
 R10
-vsquareWave
+vNoiseWaveBringup
+R1
+!i10b 1
+!s100 399];l0n`H^D<im=j`KL?2
+Io5YLb;;=hU6FKNF4:KFB20
+R2
+R0
 R11
+R12
+R13
+L0 54
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@noise@wave@bringup
+vplayFromFile
+Z14 !s110 1418716168
+!i10b 1
+!s100 P;>z22<mBRAZKYZ1zI@do1
+I7Ah`:G9HKkn7MSImk75_k1
+R2
+R0
+Z15 w1418716069
+Z16 8playFromFile.v
+Z17 FplayFromFile.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+nplay@from@file
+vsongMemory
+R14
+!i10b 1
+!s100 J>3`II3YI84YESgRo0nVF2
+I>hfB3;LnYk7CJjB<3Jh7g2
+R2
+R0
+Z18 w1418712860
+Z19 8songMemory.v
+Z20 FsongMemory.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+nsong@memory
+vsquareWave
+R1
 !i10b 1
 !s100 :WPXklAgj4ENPIeJEJVfY0
 IKe08_0XkKP6O6DmllN6[32
 R2
 R0
-Z15 w1418240520
-Z16 8squareWave.v
-Z17 FsquareWave.v
+Z21 w1418240520
+Z22 8squareWave.v
+Z23 FsquareWave.v
 L0 1
 R6
 r1
@@ -74,15 +162,15 @@ R9
 R10
 nsquare@wave
 vsquareWaveBringup
-R11
+R1
 !i10b 1
 !s100 fNBVDUdY>RQ[z9Y8e7E?[1
 I3[aXL2eALWS4D5f_YU7AR3
 R2
 R0
-R15
-R16
-R17
+R21
+R22
+R23
 L0 48
 R6
 r1
@@ -98,14 +186,14 @@ nsquare@wave@bringup
 vtestEdgeDetector
 R1
 !i10b 1
-!s100 bfSnmMc1?308=A2>EWZcG2
-INY=odjRZ1g3nX9YoCk>X32
+!s100 _M_ZWA<Yk]A4d?S1F;D4g1
+IFFUkCJHe>7cnQ]_m16^6=3
 R2
 R0
 R3
 R4
 R5
-L0 23
+L0 26
 R6
 r1
 !s85 0
@@ -117,17 +205,17 @@ R9
 !i113 1
 R10
 ntest@edge@detector
-vtestNoiseWave
-R11
+vtestPlayFromFile
+R14
 !i10b 1
-!s100 B=dnaoW`3SRDeMVdbj22F1
-IiN1[T3OA?fF>FX<fCLkeR1
+!s100 C[;3dh`Yno>KYP^:3FQHV1
+IK`Zzdad207lGZCAKYk8Vb1
 R2
 R0
-R12
-R13
-R14
-L0 15
+R15
+R16
+R17
+L0 30
 R6
 r1
 !s85 0
@@ -138,4 +226,26 @@ R9
 !s101 -O0
 !i113 1
 R10
-ntest@noise@wave
+ntest@play@from@file
+vtestSongMemory
+R1
+!i10b 1
+!s100 FldAk[kj8=>?iK<3I99Bj0
+Ihzh;Pe`IK;ICUeb=753QI1
+R2
+R0
+R18
+R19
+R20
+L0 17
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+ntest@song@memory

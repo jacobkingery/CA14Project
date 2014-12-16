@@ -31,10 +31,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 396524 kilobytes
+Total memory usage is 396564 kilobytes
 
 Writing NGD file "keyboardBringup.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  18 sec
+Total CPU time to NGDBUILD completion:   16 sec
 
 Writing NGDBUILD log file "keyboardBringup.bld"...

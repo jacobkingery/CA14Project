@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/playFromFile/testPlayFromFile.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/playFromFile/testPlayFromFile.syr" 
+xst -intstyle ise -ifn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/playFromFile/testPlayFromFile.xst" -ofn "/home/jkingery/.wine/drive_c/CompArch/Project/xilinx/playFromFile/testPlayFromFile.syr" 

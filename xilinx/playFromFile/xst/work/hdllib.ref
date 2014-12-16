@@ -1,0 +1,11 @@
+MO squareWave NULL ../../squareWave.v vlg00/square_wave.bin 1418716347
+MO NoiseWaveBringup NULL ../../noiseWave.v vlg4C/_noise_wave_bringup.bin 1418716347
+MO testPlayFromFile NULL ../../playFromFile.v vlg06/test_play_from_file.bin 1418714430
+MO songMemory NULL ../../songMemory.v vlg2C/song_memory.bin 1418716347
+MO squareWaveBringup NULL ../../squareWave.v vlg43/square_wave_bringup.bin 1418716347
+MO testSongMemory NULL ../../songMemory.v vlg20/test_song_memory.bin 1418716347
+MO testEdgeDetector NULL ../../edgeDetector.v vlg13/test_edge_detector.bin 1418716347
+MO keyboardBringup NULL ../../keyboardBringup.v vlg54/keyboard_bringup.bin 1418716347
+MO playFromFile NULL ../../playFromFile.v vlg32/play_from_file.bin 1418716347
+MO edgeDetector NULL ../../edgeDetector.v vlg3F/edge_detector.bin 1418716347
+MO lfsr NULL ../../noiseWave.v vlg63/lfsr.bin 1418716347

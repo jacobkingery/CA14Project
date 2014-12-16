@@ -11,14 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/jkingery/.wine/drive_c/CompArch/Project/edgeDetector.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/jkingery/.wine/drive_c/CompArch/Project/keyboardBringup.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/jkingery/.wine/drive_c/CompArch/Project/noiseWave.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/jkingery/.wine/drive_c/CompArch/Project/squareWave.v&quot; into library work</arg>
-</msg>
-
 </messages>
 

@@ -52,6 +52,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="keyboardBringup.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="keyboardBringup.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="keyboardBringup.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="keyboardBringup_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="keyboardBringup_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="keyboardBringup_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="keyboardBringup_map.mrp" xil_pn:subbranch="Map"/>
@@ -76,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1418492835" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1418492835">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1418492835" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6399793110360151849" xil_pn:start_ts="1418492835">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -101,11 +103,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418492842" xil_pn:in_ck="-3464283457546927340" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="7638231771039146227" xil_pn:start_ts="1418492835">
+    <transform xil_pn:end_ts="1418704147" xil_pn:in_ck="-3464283457546927340" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="6365118326893454015" xil_pn:start_ts="1418704096">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="keyboardBringup.lso"/>
@@ -123,18 +127,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418492846" xil_pn:in_ck="-1649954244554543410" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="471001817623457213" xil_pn:start_ts="1418492842">
+    <transform xil_pn:end_ts="1418704175" xil_pn:in_ck="-1649954244554543410" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="471001817623457213" xil_pn:start_ts="1418704147">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="keyboardBringup.bld"/>
       <outfile xil_pn:name="keyboardBringup.ngd"/>
       <outfile xil_pn:name="keyboardBringup_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418492850" xil_pn:in_ck="-1649954244554543409" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1418492846">
+    <transform xil_pn:end_ts="1418704202" xil_pn:in_ck="-1649954244554543409" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1418704175">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -147,9 +153,10 @@
       <outfile xil_pn:name="keyboardBringup_summary.xml"/>
       <outfile xil_pn:name="keyboardBringup_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418492862" xil_pn:in_ck="4543220385097403752" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1418492850">
+    <transform xil_pn:end_ts="1418704281" xil_pn:in_ck="4543220385097403752" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1418704202">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="keyboardBringup.ncd"/>
       <outfile xil_pn:name="keyboardBringup.pad"/>
@@ -161,9 +168,10 @@
       <outfile xil_pn:name="keyboardBringup_pad.txt"/>
       <outfile xil_pn:name="keyboardBringup_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418492891" xil_pn:in_ck="-4924338509799969653" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="4026351017656627060" xil_pn:start_ts="1418492886">
+    <transform xil_pn:end_ts="1418704354" xil_pn:in_ck="-4924338509799969653" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1418704323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="keyboardBringup.bgn"/>
       <outfile xil_pn:name="keyboardBringup.bit"/>
@@ -173,13 +181,15 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418492893" xil_pn:in_ck="-4924338509799982507" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1418492891">
+    <transform xil_pn:end_ts="1418704372" xil_pn:in_ck="-4924338509799982507" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1418704354">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1418492862" xil_pn:in_ck="-1649954244554543541" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1418492860">
+    <transform xil_pn:end_ts="1418704281" xil_pn:in_ck="-1649954244554543541" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1418704268">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="keyboardBringup.twr"/>
       <outfile xil_pn:name="keyboardBringup.twx"/>

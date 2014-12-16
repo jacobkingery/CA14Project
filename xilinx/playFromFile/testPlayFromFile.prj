@@ -1,0 +1,6 @@
+verilog work "../../squareWave.v"
+verilog work "../../edgeDetector.v"
+verilog work "../../noiseWave.v"
+verilog work "../../songMemory.v"
+verilog work "../../keyboardBringup.v"
+verilog work "../../playFromFile.v"
